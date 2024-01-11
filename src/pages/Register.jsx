@@ -29,6 +29,10 @@ const Register = () => {
   },[user])
       const handleSubmit = async (e) => {
         e.preventDefault();
+           if (!user.email || !user.password || !user.firstName) {
+   alert("Enter The Details ");
+    return;
+           }
         const data = {
           email: user.email,
           password: user.password,
