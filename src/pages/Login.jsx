@@ -23,7 +23,7 @@ const Login = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-     if (!user.email || !user.password || !user.firstName) {
+     if (!user.email || !user.password ) {
    alert("Enter The Details ");
     return;
      }
